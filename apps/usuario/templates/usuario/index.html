@@ -1,0 +1,77 @@
+{% extends 'usuario/plantilla.html'%}
+
+{% block contenido %}
+
+<div class="col-xs-12 ">
+    <div class="row presentacion">
+        <div class="col-xs-12 ">
+            <h1 class="center-xs ">
+                ¡Hola! Bienvenido a WinBip
+                <br>
+                <br>
+
+            </h1>
+            <div class="row parrafos_iz">
+                <div class="col-xs-12 ">
+                    <h5 id="izquierda">
+                        <p>Estimado transeúnte, tenemos el agrado de enseñarte un nuevo
+                            uso/complemento de
+                            tu tarjeta bip.
+                        </p>
+                        <br>
+
+                        <p>
+                            Sabemos lo tedioso que es a veces viajar día tras día en las mismas
+                            micros y metros de nuestro país; sin ningun tipo de distracción o novedad
+                            dentro de las mismas, pero... ¿esto debe ser siempre así?
+                            <br>
+                            <br>
+                            <br>
+
+                            Con la iniciativa WinBip tus viajes y recorridos tendrán un toque más divertido.
+                            <br>
+                            <br>
+                        </p>
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+
+</div>
+</div>
+    <div class="row center-xs" id="explicacion" >
+        <div class="col-xs-12 " id="explicacion_fondo" >
+            <h5>
+                <br>
+                <br>
+
+                La aplicación funcionará asi:
+                <br>
+                <br>
+                <li>
+                    - Pagarás tu pasaje de la misma forma que lo haces hasta ahora.
+                </li>
+                <li>
+                    - Entraras a WinBip y deberás <a href="registro.html">registrarte</a> con tus datos y numero de tarjeta.
+                </li>
+                <li>
+                    - Una vez registrado, ya puedes disfrutar de los beneficios de WinBip, donde ganarás puntos cada vez que viajes.
+                </li>
+                <li>
+                    - Con los puntos podras subir niveles y ganar <a href="{% url 'premios'%}">premios</a>.
+                </li>
+                
+
+
+            </h5>
+
+        </div>
+    </div>
+    <br><br><br><br>
+
+    {% endblock contenido %}

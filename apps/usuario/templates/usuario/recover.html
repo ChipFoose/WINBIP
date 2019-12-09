@@ -1,0 +1,27 @@
+{% extends 'usuario/plantilla.html'%}
+{% block contenido %}
+<div class="col-xs-12 presentacion">
+    <form action="/recuperar/" method="post" >
+        {% csrf_token %}
+        <h1 class="center-xs">
+            Recuperación de contraseña.
+        </h1>
+        <div class="row formulario_style">
+            <div class="col-xs-12 col-md-6 center-xs">
+
+                <div class="col-xs-12 col-md-9 center-xs separacion_form">
+                    <label for="email">Ingrese su email</label>
+                    <div class="form-group  " >
+                        <label for="Correo"></label>
+                        <input id="email" type="email" class="form-control"  name="email" placeholder="Correo">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-block btn-primary" onclick="recoverpass()">Recuperar</button>
+
+            </div>
+        </div>
+
+    </form>
+</div>
+
+{% endblock contenido %}
